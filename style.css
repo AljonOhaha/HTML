@@ -1,204 +1,30 @@
-/* General Body Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #0f0f0f; /* Dark background */
-    color: #e0e0e0; /* Light text */
-}
 
-/* --- Navigation Bar --- */
-.navbar {
-    background-color: #1a1a1a;
-    padding: 10px 0;
-    border-bottom: 2px solid #333;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+body { font-family: 'Poppins', sans-serif;  margin: 0;padding: 0; background-color: #0f0f0f;  color: #e0e0e0; }
+.navbar { background-color: #1a1a1a; padding: 10px 0;  border-bottom: 2px solid #333;  position: sticky;top: 0; z-index: 1000;}
+.nav-container { max-width: 1200px; margin: 0 auto;padding: 0 20px;  display: flex;  justify-content: space-between;align-items: center;}
+.logo { display: flex; align-items: center;font-size: 1.2rem; font-weight: 600;}
+.nav-profile-pic { width: 30px;  height: 30px; border-radius: 50%;margin-right: 10px;object-fit: cover; border: 2px solid #5a5a5a;}
+.navbar ul { list-style: none;margin: 0;padding: 0;display: flex;gap: 20px;}
+.navbar a {color: #e0e0e0;text-decoration: none; font-weight: 400; transition: color 0.3s ease;}
+.navbar a:hover { color: #4a90e2;}
+.hero { padding: 100px 0; text-align: left;}
+.hero-container { max-width: 1200px; margin: 0 auto;padding: 0 20px;display: flex;justify-content: space-between;align-items: flex-start;}
+.hero-content {flex: 1;}
+.hero-content h1 { font-size: 3rem;font-weight: 700;margin-bottom: 10px;color: #fff;}
+.hero-content p {font-size: 1rem; max-width: 600px;line-height: 1.6;color: #b0b0b0;}
+.hero-image {flex: 1;text-align: center; position: relative;top: 50px;}
+.hero-image img {max-width: 80%; height: auto;border-radius: 10px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);}
+.hero-image p {margin-top: 10px;font-size: 0.9rem;color: #999;}
+.about-me-section {padding: 80px 0;}
+.about-me-container {max-width: 1000px;margin: 0 auto;padding: 0 20px;display: flex; gap: 40px;border-top: 2px solid #333;padding-top: 40px;}
+.about-me-content, .projects-content {flex: 1;}
+h2 {font-size: 2.5rem;font-weight: 700;color: #fff;margin-bottom: 20px;}
+.about-me-content p, 
+.projects-content p {font-size: 1rem;line-height: 1.8;color: #b0b0b0;}
+.contact-section { padding: 80px 0;}
+.contact-container {max-width: 1000px;margin: 0 auto;padding: 0 20px;padding-top: 40px; border-top: 2px solid #333;}
+.contact-container h1 {font-size: 2.5rem;font-weight: 700;color: #fff;margin-bottom: 20px;}
+.contact-container p {font-size: 1.2rem;line-height: 2;color: #e0e0e0;}
+.contact-container a {color: #4a90e2; text-decoration: none;transition: color 0.3s ease;}
+.contact-container a:hover {text-decoration: underline;}
 
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.nav-profile-pic {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-right: 10px;
-    object-fit: cover;
-    border: 2px solid #5a5a5a;
-}
-
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-.navbar a {
-    color: #e0e0e0;
-    text-decoration: none;
-    font-weight: 400;
-    transition: color 0.3s ease;
-}
-
-.navbar a:hover {
-    color: #4a90e2; /* Hover color */
-}
-
-/* --- Home Section --- */
-.hero {
-    padding: 100px 0;
-    text-align: left;
-}
-
-.hero-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.hero-content {
-    flex: 1;
-}
-
-.hero-content h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-.hero-content p {
-    font-size: 1rem;
-    max-width: 600px;
-    line-height: 1.6;
-    color: #b0b0b0;
-}
-
-.hero-image {
-    flex: 1;
-    text-align: center;
-    position: relative;
-    top: 50px;
-}
-
-.hero-image img {
-    max-width: 80%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.hero-image p {
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: #999;
-}
-
-/* --- About Me Section --- */
-.about-me-section {
-    padding: 80px 0;
-}
-
-.about-me-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    gap: 40px;
-    border-top: 2px solid #333;
-    padding-top: 40px;
-}
-
-.about-me-content, .projects-content {
-    flex: 1;
-}
-
-h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.about-me-content p, .projects-content p {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #b0b0b0;
-}
-
-/* --- Contact Page Sections --- */
-.contact-section {
-    padding: 80px 0;
-}
-
-.contact-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-    padding-top: 40px;
-    border-top: 2px solid #333;
-}
-
-.contact-container h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.contact-container p {
-    font-size: 1.2rem;
-    line-height: 2;
-    color: #e0e0e0;
-}
-
-.contact-container a {
-    color: #4a90e2;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.contact-container a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Design for smaller screens */
-@media (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .hero-container, .about-me-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .hero-content {
-        order: 2;
-        text-align: center;
-    }
-    .hero-image {
-        order: 1;
-        margin-bottom: 30px;
-        top: 0;
-    }
-}
